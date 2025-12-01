@@ -1,0 +1,19 @@
+
+.bg-custom {
+    background: linear-gradient(to bottom, #f5e96c, #dccc4a);
+}
+
+.card-custom {
+    background-color: #0f3d0f;
+}
+
+.card-custom input {
+    border-radius: 8px;
+}
+span{
+    color: red;
+}
+.form-check .form-check-input{
+    border-radius: 10px;
+}
+
