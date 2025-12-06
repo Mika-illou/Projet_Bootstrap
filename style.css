@@ -15,5 +15,6 @@ span{
 }
 .form-check .form-check-input{
     border-radius: 10px;
+    overflow: hidden;
 }
 

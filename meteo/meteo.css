@@ -1,0 +1,15 @@
+ body {
+    font-family: 'Segoe UI',sans-serif;
+}
+.hearder_1 {
+    background-color:#FFF7DF;
+}
+ul {
+    list-style:none;
+}
+.button_connect{
+    background-color: #1D3D14;
+}
+.button_connect:hover{
+    background-color: #080d07;
+}
