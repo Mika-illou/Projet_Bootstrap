@@ -24,7 +24,6 @@ body{font-family:Arial, sans-serif; background:#f6f7fb;}
     color:#0f172a;
 }
 
-
 #menuToggle{display:none;}
 
 .menu-btn{
@@ -112,9 +111,7 @@ body{font-family:Arial, sans-serif; background:#f6f7fb;}
     transform:translateX(0);
 }
 
-
-
- body {
+body {
     font-family: 'Segoe UI',sans-serif;
 }
 .header_1 {
@@ -135,15 +132,14 @@ ul a:hover{
 .button_connect{
     background-color: #1D3D14;
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 .button_connect:hover{
-    background-color: #080d07;
+    background-color: #e4f6e0;
 }
 .niger{
     border-right: 2px solid black;
 }
-
 
 .home{
     background-image: url('../image/Home\ Carroussel.jpg');
@@ -162,25 +158,11 @@ ul a:hover{
     margin-top: -150px;
 }
 
-.card{
-    width: 590px !important;
-    height: 360px !important;
-    border: none;
-}
-
-
-.image_agri .card {
-    width: 350px;
-    height: 400px;
-    
-}
 
 .imag{
     width: 450px !important;
     height: 400px !important;
 }
-
-/* IMAGE ZOOM */
 
 
 .weather-card {
@@ -200,10 +182,10 @@ ul a:hover{
     color: black;
     margin: 0;
     padding: 10px;
-    height: 30px;               /* hauteur initiale */
-    overflow: hidden;           /* cache le texte supplémentaire */
+    height: 30px;               
+    overflow: hidden;           
     border-radius: 0 0 15px 15px;
-    transition: all 0.4s ease;  /* animation */
+    transition: all 0.4s ease; 
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -252,81 +234,6 @@ ul a:hover{
     height: 380px !important;
 }
 
-
-/* 
-.img-container {
-    overflow: hidden;
-    height: 100%;
-    border-radius: 16px;
-}
-
-.img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
-
-.card-hover:hover .img-container img {
-    transform: scale(1.10);
-}
-
-
-
-
-.card-overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    color: white;
-    padding: 10px 20px;
-    transition: all 0.5s ease;
-}
-
-
-.card-overlay h2 {
-    background-color: white;
-    color: black;
-    margin: 0;
-    font-size: 24px;
-    opacity: 0.9;
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-}
-
-
-.card-overlay .details {
-    background-color: white;
-    color: black;
-    opacity: 0;
-    margin-top: 8px;
-    font-size: 15px;
-    transition: opacity 0.6s ease;
-}
-
-
-.card-hover:hover .card-overlay h2 {
-    transform: translateY(-20px);
-    opacity: 1;
-    font-size: 28px;
-}
-
-.card-hover:hover .card-overlay .details {
-    opacity: 1;
-}
-.details i{
-    font-size: 2rem;
-    color: #203E15;
-}
-.details a{
-    display: flex;
-    flex-direction: column; 
-    color: #203E15; 
-} */
-
-
 .pourcentage_2 i{
     width: 45px;
     height: 45px;
@@ -349,16 +256,6 @@ ul a:hover{
     width: 80%;
     height: 20%;
 }
-
-/* .weather-card {
-    display: flex;
-    justify-content: center;
-    background-color: #ebdb53; 
-    border-radius: 20px;
-    width: 700px;
-    height: 400px;
-} */
-
 .jaune {
     display: flex;
     justify-content: center;
@@ -369,14 +266,10 @@ ul a:hover{
     box-shadow: 1px 1px 1px 1px black;
 }
 
-
-
 .fao-card {
     background-color: #143d1c; 
     border-radius: 20px;
 }
-
-
 
 .formation-card img {
     height: 260px;
@@ -384,8 +277,20 @@ ul a:hover{
     object-fit: cover;
 }
 
-.formation-card a {
+a {
     text-decoration: none;
+    color: black;
+}
+.button_plus:hover{
+    width: 150px;
+    height: 50px;
+    background-color: #143d1c;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .formation-card a:hover {
@@ -436,7 +341,6 @@ ul a:hover{
     .col-678-6 {
         flex: 0 0 auto;
         width: 50%;
-    
 }
 }
 
@@ -459,10 +363,10 @@ ul a:hover{
         width: 100%;
     }
    .image_agri {
-    display: grid;
-    gap: 2rem; /* espace entre cartes */
-}
-
-
+    margin-top: -30px;
+     }
+     .hero-title{
+        margin-top: 20px;
+     }
 
 }
