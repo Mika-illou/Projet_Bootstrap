@@ -142,7 +142,7 @@ ul a:hover{
 }
 
 .home{
-    background-image: url('../image/Home\ Carroussel.jpg');
+    background-image: url('./image/Home\ Carroussel.jpg');
     background-size: cover;        
     background-position: center;   
     background-repeat: no-repeat;  
