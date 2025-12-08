@@ -173,6 +173,9 @@ ul a:hover{
     font-size: 1.4rem;
     cursor: pointer;
 }
+.fou_Col{
+    background-color: #162D0E;
+}
 
 @media (max-width:1024px) {
    

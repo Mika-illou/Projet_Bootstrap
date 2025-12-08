@@ -134,6 +134,7 @@ ul a:hover{
 }
 .button_connect{
     background-color: #1D3D14;
+    color: white;
 }
 .button_connect:hover{
     background-color: #080d07;
@@ -192,6 +193,9 @@ ul a:hover{
     justify-content: center;
     align-items: center;
     font-size: 14px;
+}
+.fou_Col{
+    background-color: #162D0E;
 }
 
 @media (max-width:1024px) {

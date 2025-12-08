@@ -135,7 +135,10 @@ ul a:hover{
     color: white !important;
 }
 .button_connect:hover{
-    background-color: #e4f6e0;
+    background-color: #1d6b03;
+}
+.button_connect a{
+    color: white !important;
 }
 .niger{
     border-right: 2px solid black;
@@ -176,19 +179,43 @@ ul a:hover{
     width: 100%;
 }
 
+
+
+
+
+.img-container {
+    overflow: hidden;       
+    border-radius: 15px;    
+}
+
+/* Image normale */
+.img-container img {
+    transition: transform 0.5s ease;
+}
+
+/* Zoom au hover */
+.card-hover:hover .img-container img {
+    transform: scale(1.15);   /* zoom */
+}
+
+
 /* H2 par défaut */
 .expand-box {
     background: white;
     color: black;
     margin: 0;
     padding: 10px;
-    height: 30px;               
+    height: 30px;
+    width: 90%;           
     overflow: hidden;           
     border-radius: 0 0 15px 15px;
     transition: all 0.4s ease; 
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+.expand-box i{
+    color: #188754 ;
 }
 
 /* Bloc d’informations caché */
@@ -199,8 +226,9 @@ ul a:hover{
 
 /* Hover : le même H2 s’agrandit */
 .weather-card:hover .expand-box{
-    height: 330px;              /* hauteur après hover */
+    height: 330px;              
     padding: 20px;
+    width: 90%;
 }
 
 /* Le contenu devient visible */
@@ -208,14 +236,15 @@ ul a:hover{
     opacity: 1;
 }
 .det:hover{
-    background-color: blue;
+    background-color: #188754;
     width: 300px !important;
     border-radius: 10px !important;
     padding: 10px;
     color: #FFF7DF !important;
+    cursor: pointer;
 }
 .dette:hover{
-    background-color: blue;
+    background-color: #143D1D;
     width: 160px !important;
     border-radius: 10px !important;
     padding: 10px;
@@ -309,10 +338,13 @@ a {
     object-fit: cover;
    
 }
-.test{
+.fou_Col{
+    background-color: #162D0E;
+}
+/* .test{
     height: 405px !important;
     width: 600px !important;
-}
+} */
 
 @media (max-width:1024px) {
    
