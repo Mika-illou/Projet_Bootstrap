@@ -40,15 +40,10 @@ body{font-family:Arial, sans-serif; background:#f6f7fb;}
     box-shadow:0 4px 12px rgba(0,0,0,0.05);
 }
 
-.dots{
-    display:flex;
-    gap:6px;
-}
 .dots span{
-    width:6px;
-    height:6px;
+    width:20px;
+    height:3px;
     background:#0f172a;
-    border-radius:50%;
 }
 .menu{
     display: flex;
@@ -178,14 +173,11 @@ ul a:hover{
 }
 
 @media (max-width:1024px) {
-   
-    .image_agri .card{
-    width: 20% !important;
-    height: 400px !important;
-    }
-    .image_agri{
-    margin-top: -100px;
-    }
+
+    .img-container img{
+    width: 100%;
+    height: 100%;
+   }
    
 }
 @media (max-width:768px) {
@@ -204,7 +196,6 @@ ul a:hover{
     .col-678-6 {
         flex: 0 0 auto;
         width: 50%;
-    
 }
 }
 
@@ -227,10 +218,33 @@ ul a:hover{
         width: 100%;
     }
    .image_agri {
-    display: grid;
-    gap: 2rem; /* espace entre cartes */
+    margin-top: -30px;
+     }
+     .hero-title{
+        margin-top: 20px;
+     }
+
 }
 
+@media (max-width:375px) {
+    .home{
+        height: 60vh; 
+    }
+    h3, h2{
+        font-size: 12px;
+    }
+    p{
+        font-size: 8px;
+    }
 
-
+}
+@media (max-width:320px) {
+    .home{
+        height: 70vh; 
+    }
+    .sidebar{
+   
+    width:313px;
+    
+}
 }
