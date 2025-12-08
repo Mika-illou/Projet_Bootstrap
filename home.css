@@ -391,6 +391,9 @@ a {
      .hero-title{
         margin-top: 20px;
      }
+     .form-control{
+        display: none;
+    }
 
 }
 

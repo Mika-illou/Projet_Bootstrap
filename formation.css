@@ -177,7 +177,7 @@ ul a:hover{
 .date-circle {
     position: absolute;
     bottom: -30px;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
     background-color: #ded96e;
     width: 90px;
@@ -189,9 +189,23 @@ ul a:hover{
     align-items: center;
     font-size: 14px;
 }
+
+
+/* Effet zoom sur hover */
+.custom-img {
+    transition: transform 0.4s ease;
+}
+
+.img-wrapper:hover .custom-img {
+    transform: scale(1.1);  /* zoom au survol */
+}
 .fou_Col{
     background-color: #162D0E;
 }
+.sui_info a{
+    color: black;
+}
+
 
 @media (max-width:1024px) {
 
@@ -244,6 +258,9 @@ ul a:hover{
      .hero-title{
         margin-top: 20px;
      }
+     .form-control{
+        display: none;
+    }
 
 }
 

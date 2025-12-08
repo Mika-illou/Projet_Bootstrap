@@ -17,14 +17,11 @@ body{font-family:Arial, sans-serif; background:#f6f7fb;}
     border-bottom:1px solid #e5e7eb;
 }
 
-
 .logo{
     font-weight:bold;
     font-size:20px;
     color:#0f172a;
 }
-
-
 #menuToggle{display:none;}
 
 .menu-btn{
@@ -39,7 +36,6 @@ body{font-family:Arial, sans-serif; background:#f6f7fb;}
     background:white;
     box-shadow:0 4px 12px rgba(0,0,0,0.05);
 }
-
 .dots span{
     width:20px;
     height:3px;
@@ -80,7 +76,6 @@ body{font-family:Arial, sans-serif; background:#f6f7fb;}
     transition:0.3s ease;
     z-index:99999999999999;
 }
-
 .sidebar h2{
     margin-bottom:20px;
     font-size:22px;
@@ -93,7 +88,6 @@ body{font-family:Arial, sans-serif; background:#f6f7fb;}
     text-decoration:none;
     font-size:16px;
 }
-
 .sidebar a:hover{
     color:#06b6d4;
 }
@@ -107,9 +101,7 @@ body{font-family:Arial, sans-serif; background:#f6f7fb;}
     transform:translateX(0);
 }
 
-
-
- body {
+body {
     font-family: 'Segoe UI',sans-serif;
 }
 .header_1 {
@@ -136,24 +128,32 @@ ul a:hover{
 .niger{
     border-right: 2px solid black;
 }
+button a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Réduire la hauteur de l'image */
 .banner-img {
-    height: 300px;        /* tu peux modifier la valeur */
+    height: 300px;        
     width: 100%;
     object-fit: cover;
 }
 
 /* Taille texte */
 .small-title {
-    font-size: 22px;      /* h2 plus petit */
+    font-size: 22px;     
 }
 
 .main-title {
-    font-size: 42px;      /* h1 plus grand */
+    font-size: 42px;     
 }
 .fou_Col{
     background-color: #162D0E;
+}
+.sui_info a{
+    color: black;
 }
 
 @media (max-width:1024px) {
@@ -207,6 +207,9 @@ ul a:hover{
      .hero-title{
         margin-top: 20px;
      }
+    .form-control{
+        display: none;
+    }
 
 }
 
