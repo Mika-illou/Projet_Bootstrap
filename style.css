@@ -1,20 +1,33 @@
 
-.bg-custom {
-    background: linear-gradient(to bottom, #f5e96c, #dccc4a);
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f5e46c, #d9cc5a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
 }
 
-.card-custom {
-    background-color: #0f3d0f;
+.login-card {
+    background: #0f3413;  
+    width: 420px;
 }
 
-.card-custom input {
-    border-radius: 8px;
+.login-btn {
+    background: #1e8d58;
+    border: none;
 }
-span{
-    color: red;
+.login-btn:hover {
+    background: #176c45;
 }
 .form-check .form-check-input{
     border-radius: 10px;
     overflow: hidden;
+}
+@media (max-width:425px) {
+    .login-card {  
+    width: 300px;
+    }
+    
 }
 

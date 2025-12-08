@@ -1,0 +1,468 @@
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial, sans-serif; background:#f6f7fb;}
+
+.nav_menu{
+    width:100%;
+    height:60px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    border-bottom:1px solid #e5e7eb;
+}
+
+
+.logo{
+    font-weight:bold;
+    font-size:20px;
+    color:#0f172a;
+}
+
+
+#menuToggle{display:none;}
+
+.menu-btn{
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius:8px;
+    border:1px solid #e5e7eb;
+    background:white;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.dots{
+    display:flex;
+    gap:6px;
+}
+.dots span{
+    width:6px;
+    height:6px;
+    background:#0f172a;
+    border-radius:50%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.nav_menu{
+    display: none !important;
+}
+
+/*  OVERLAY*/
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    opacity:0;
+    pointer-events:none;
+    transition:0.3s;
+    z-index:90;
+}
+
+/* SIDEBAR  */
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:360px;
+    height:100vh;
+    background-color:white;
+    color:black;
+    padding:20px;
+    transform:translateX(-100%);
+    transition:0.3s ease;
+    z-index:99999999999999;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.sidebar a{
+    color:#dbeafe;
+    display:block;
+    padding:10px 0;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.sidebar a:hover{
+    color:#06b6d4;
+}
+/*  ACTIVATION VIA CHECKBOX  */
+#menuToggle:checked ~ .overlay{
+    opacity:1;
+    pointer-events:auto;
+}
+
+#menuToggle:checked ~ .sidebar{
+    transform:translateX(0);
+}
+
+
+
+ body {
+    font-family: 'Segoe UI',sans-serif;
+}
+.header_1 {
+    background-color:#FFF7DF;
+}
+.header_2 {
+    background-color: #ffffff;
+}
+ul {
+    list-style:none;
+}
+ul a:hover{
+    transform: translateY(1.2px);
+}
+.icoin i:hover{
+    cursor: pointer;
+}
+.button_connect{
+    background-color: #1D3D14;
+    text-decoration: none;
+    color: white;
+}
+.button_connect:hover{
+    background-color: #080d07;
+}
+.niger{
+    border-right: 2px solid black;
+}
+
+
+.home{
+    background-image: url('../image/Home\ Carroussel.jpg');
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+    height: 50vh; 
+    width: 100%; color: white;           
+}
+.phrase_milieu{
+    font-size: 28px;
+    font-weight: 700;
+    display: none;
+}
+.image_agri{
+    margin-top: -150px;
+}
+
+.card{
+    width: 590px !important;
+    height: 360px !important;
+    border: none;
+}
+
+
+.image_agri .card {
+    width: 350px;
+    height: 400px;
+    
+}
+
+.imag{
+    width: 450px !important;
+    height: 400px !important;
+}
+
+/* IMAGE ZOOM */
+
+
+.weather-card {
+    width: 350px;
+    background-color: #EFDF67;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* H2 par défaut */
+.expand-box {
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    height: 30px;               /* hauteur initiale */
+    overflow: hidden;           /* cache le texte supplémentaire */
+    border-radius: 0 0 15px 15px;
+    transition: all 0.4s ease;  /* animation */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Bloc d’informations caché */
+.more-info {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+/* Hover : le même H2 s’agrandit */
+.weather-card:hover .expand-box{
+    height: 330px;              /* hauteur après hover */
+    padding: 20px;
+}
+
+/* Le contenu devient visible */
+.weather-card:hover .more-info {
+    opacity: 1;
+}
+.det:hover{
+    background-color: blue;
+    width: 300px !important;
+    border-radius: 10px !important;
+    padding: 10px;
+    color: #FFF7DF !important;
+}
+.dette:hover{
+    background-color: blue;
+    width: 160px !important;
+    border-radius: 10px !important;
+    padding: 10px;
+    color: #FFF7DF !important;
+
+}
+.mika{
+    display: none !important;
+    height: 100% !important;
+    padding: 20px !important;
+}
+.jaune{
+    background-color: white;
+}
+.col2{
+    height: 380px !important;
+}
+
+
+/* 
+.img-container {
+    overflow: hidden;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card-hover:hover .img-container img {
+    transform: scale(1.10);
+}
+
+
+
+
+.card-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+
+.card-overlay h2 {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-size: 24px;
+    opacity: 0.9;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+
+.card-overlay .details {
+    background-color: white;
+    color: black;
+    opacity: 0;
+    margin-top: 8px;
+    font-size: 15px;
+    transition: opacity 0.6s ease;
+}
+
+
+.card-hover:hover .card-overlay h2 {
+    transform: translateY(-20px);
+    opacity: 1;
+    font-size: 28px;
+}
+
+.card-hover:hover .card-overlay .details {
+    opacity: 1;
+}
+.details i{
+    font-size: 2rem;
+    color: #203E15;
+}
+.details a{
+    display: flex;
+    flex-direction: column; 
+    color: #203E15; 
+} */
+
+
+.pourcentage_2 i{
+    width: 45px;
+    height: 45px;
+    font-size: 2rem;
+    background-color: #203E15;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.carte_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0 !important;
+    border-radius: 15px;
+    background-color: white;
+    width: 80%;
+    height: 20%;
+}
+
+/* .weather-card {
+    display: flex;
+    justify-content: center;
+    background-color: #ebdb53; 
+    border-radius: 20px;
+    width: 700px;
+    height: 400px;
+} */
+
+.jaune {
+    display: flex;
+    justify-content: center;
+    background-color: white; 
+    border-radius: 20px;
+    width: 700px;
+    height: 400px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+
+
+.fao-card {
+    background-color: #143d1c; 
+    border-radius: 20px;
+}
+
+
+
+.formation-card img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.formation-card a {
+    text-decoration: none;
+}
+
+.formation-card a:hover {
+    text-decoration: underline;
+}
+
+.formation-card {
+    transition: 0.3s ease;
+}
+.cont_image{
+    height: 300px;
+}
+.cont_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+}
+.test{
+    height: 405px !important;
+    width: 600px !important;
+}
+
+@media (max-width:1024px) {
+   
+    .image_agri .card{
+    width: 20% !important;
+    height: 400px !important;
+    }
+    .image_agri{
+    margin-top: -100px;
+    }
+   
+}
+@media (max-width:768px) {
+    .nav_1, .nav_2{
+        display: none !important;
+    }
+    .phrase_milieu{
+    display:block;
+    }
+    .cachet{
+        display: none !important;
+    }
+    .mika{
+    display: flex !important;
+    }
+    .col-678-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    
+}
+}
+
+@media (max-width:425px) {
+    .nav_menu{
+        display: flex !important;
+    }
+    .header_2{
+        display: none !important;
+    }
+
+    .header_1{
+        display: none !important;
+    }
+    .pourcentage_2{
+        padding: 0 !important;
+    }
+     .col-678-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+   .image_agri {
+    display: grid;
+    gap: 2rem; /* espace entre cartes */
+}
+
+
+
+}
