@@ -202,8 +202,38 @@ ul a:hover{
 .fou_Col{
     background-color: #162D0E;
 }
+.fou_Col:hover {
+    background-color: #27471d;
+}
 .sui_info a{
     color: black;
+}
+.button_abonne{
+    width: 150px;
+}
+.button_abonne:hover{
+    background-color: #143d1c;
+}
+
+
+.img-wrapper{
+    position: relative;
+}
+
+.img-wrapperimg {
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: blur(0px);
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.1);
+    filter: blur(1px);
+}
+
+/* Animation optionnelle pour le contenu */
+.formation-card:hover .card-body {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 

@@ -152,8 +152,17 @@ button a{
 .fou_Col{
     background-color: #162D0E;
 }
+.fou_Col:hover {
+    background-color: #27471d;
+}
 .sui_info a{
     color: black;
+}
+.button_abonne{
+    width: 150px;
+}
+.button_abonne:hover{
+    background-color: #143d1c;
 }
 
 @media (max-width:1024px) {
